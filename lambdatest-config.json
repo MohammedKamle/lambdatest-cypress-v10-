@@ -1,0 +1,44 @@
+{
+   "lambdatest_auth": {
+      "username": "mohammadk",
+      "access_key": "rakcBoBYHiy8BW7osVi4N1LGYjgJhRfAwvL1pPUvwCA1wfNChd"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Webkit",
+         "platform": "MacOS Monterey",
+         "versions": [
+            "latest"  
+         ]
+      }
+   ],
+   "run_settings": {
+      "reporter_config_file": "base_reporter_config.json",
+      "downloads": "./cypress/results",
+      "build_name": "build-name",
+      "parallels": 2,
+      "specs": "cypress/e2e/1-getting-started/todo.cy.js",
+      "ignore_files": "",
+      "network": true,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "^12.17.1",
+         "mocha-junit-reporter": "2.2.0",
+         "playwright-webkit": "1.37.0"      },
+      "smart_ui": {
+         "project": "cy-mdk", 
+         "baseline": false
+       }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
+}
